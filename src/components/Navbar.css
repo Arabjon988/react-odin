@@ -1,0 +1,99 @@
+.collect{
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 10px 500px;
+    justify-content: space-between;
+}
+
+.navbar{
+    background-color: rgba(7, 7, 7, 0.897);
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    margin: 10px 20px;
+    color: rgb(212, 164, 164);
+    border-top: 2px solid transparent;
+}
+
+
+.collection{
+    text-decoration: none;
+    color: #fff;   
+}
+
+.collect li:hover{
+    border-top: 2px solid rgb(168, 168, 145);
+    transition: all 0.5s;
+}
+
+.logo{
+    border-radius: 50px;
+    margin: 10px 20px;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+button{
+    margin: 10px 30px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    width: 100px;
+    height:auto;
+    outline: none;
+}
+
+.contact{
+    background-color: rgb(50, 61, 34);
+}
+
+button:hover{
+    border: 3px solid rgb(22, 184, 22);
+}
+
+.about{
+    display: flex;
+    position: relative;
+}
+
+.about ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about ul li{
+    margin: 10px 50px;
+    padding: 10px 30px;
+    align-items: center;
+    text-align: center;
+    word-spacing: 3px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    line-height: 25px;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(157, 194, 102);
+    color: #fff;
+}
+
+.about ul li:hover{
+    border: 1px solid rgb(15, 10, 10);
+}
+
+.home{
+    background: rgb(117, 90, 71);
+}
+
+.img{
+    width: 200px;
+    height: auto;
+    margin: 10px 30px;
+    border-radius: 50px;
+}
