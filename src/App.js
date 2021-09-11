@@ -1,32 +1,20 @@
 import './App.css';
+import Home from './Home';
 import {
-  BrowserRouter as Router, Route, Redirect, Switch
+  BrowserRouter as Router, Route, Switch
 } from 'react-router-dom'
-import Navbar from './components/Navbar';
-import Home from './container/Home';
-import About from './container/About';
-import Contact from './container/Contact';
-import Services from './container/Services';
+import User from './User';
+
 const App = () => {
+
+ 
+
   return (
     <Router>
-      <Navbar />
-      <div className="pages">
+      <div className="app">
         <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/about" >
-            <About />
-          </Route>
-          <Route path="/services" >
-            <Services />
-          </Route>
-          <Route path="/contact" >
-            <Contact />
-          </Route>
-
-          <Redirect to="/" />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/:username" component={User}/>
         </Switch>
       </div>
     </Router>
